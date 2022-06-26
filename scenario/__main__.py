@@ -118,13 +118,13 @@ START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
 ────「 [Romi](https://telegra.ph/file/f3ab97df5b34519b9b285.jpg) 」────
-*Hola! {},*
-*I am {} Anime Themed Advance Group Management Bot With A Lot Of Sexy Features.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-• *Uptime:* `{}`
-• `{}` *users, across* `{}` *chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Try The Help Buttons Below To Know My Abilities ××
+*• Hᴇʏ! {},*
+*• ɪ Aᴍ {} Aɴɪᴍᴇ Tʜᴇᴍᴇᴅ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍɴᴇᴛ Bᴏᴛ Wɪᴛʜ A Lᴏᴛ Oғ Sᴇxʏ Fᴇᴀᴜᴛᴜʀᴇs •*
+------------------------------------
+• *• Uᴘᴛɪᴍᴇ •* `{}`
+• `{}` *Usᴇʀ • Aᴄʀᴏss* `{}` *Cʜᴀᴛ •*
+---------------------------------
+• Tʀʏ Tʜᴇ /help Bᴜᴛᴛᴏɴs Bᴇʟᴏᴡ Tᴏ Kɴᴏᴡ Mʏ Aʙɪʟɪᴛɪᴇs •
 """
 
 GROUP_START_TEXT = """
@@ -135,24 +135,24 @@ Haven't slept since: {}
 buttons = [
     [
                         InlineKeyboardButton(
-                            text=f"⚓ ❄️ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ❄️ ⚓",
-                            url="https://t.me/ScenarioXbot?startgroup=true")
+                            text=f"• Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ •",
+                            url="http://t.me/Romi_Robot?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="☘️ ᴀʙᴏᴜᴛ ☘️", callback_data="scenario_"),
-                       InlineKeyboardButton(text="⚔️ ɪɴʟɪɴᴇ ⚔️", switch_inline_query_current_chat=""),
+                       InlineKeyboardButton(text="• Aʙᴏᴜᴛ •", callback_data="Romi_"),
+                       InlineKeyboardButton(text="• Iɴʟɪɴᴇ •", switch_inline_query_current_chat=""),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="✨ sᴜᴘᴘᴏʀᴛ ✨",
+                             text="• Sᴜᴘᴘᴏʀᴛ •",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="✨ ᴜᴩᴅᴀᴛᴇs ✨",
+                             text="• Uᴘᴅᴀᴛᴇs •",
                              url=f"https://t.me/{UPDATES_CHANNEL}")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🔰 ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs 🔰", callback_data="help_back"
+                             text="• Aʟʟ Cᴀᴍᴍᴀɴᴅs •", callback_data="help_back"
                          ),
                      ],
     ]
@@ -252,7 +252,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="[• Bᴀᴄᴋ •]", callback_data="help_back")]]
                     ),
                 )
 
@@ -291,11 +291,11 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support",
+                            text="• Sᴜᴘᴘᴏʀᴛ •",
                             url=f"https://t.me/{SUPPORT_CHAT}",
                         ),
                         InlineKeyboardButton(
-                            text="Updates",
+                            text="• Uᴘᴅᴀᴛᴇs •",
                             url=f"https://t.me/{UPDATES_CHANNEL}",
                         ),
                     ]
@@ -352,19 +352,19 @@ def scenario_about_callback(update, context):
     first_name = update.effective_user.first_name
     if query.data == "scenario_":
         query.message.edit_text(
-            text=f"Hello dear {first_name}, My name is Scenario. A Powerful Telegram Group Management Bot.\n My developer - @TeamScenario\n\nIf you have any Question, You can join our support chat. \nMy developer will help you. \nCheck Link Below",
+            text=f"• Hᴇʟᴏ Dᴇᴀʀ {first_name}, Mʏ Nᴀᴍᴇ Is Rᴏᴍɪ A Pᴏᴡᴇʀғᴜʟ Tᴇʟᴇɢʀᴀᴍ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ. Yᴏᴜ Hᴀᴠᴇ Aɴʏ Qᴜᴇsᴛɪᴏɴs - Yᴏᴜ Cᴀɴ Jᴏɪɴ Oᴜʀ Sᴜᴘᴘᴏʀ Cʜᴀᴛ • \nMʏ Oᴡɴᴇʀ Wɪʟʟ Hᴇʟᴘ Yᴏᴜ. \nCʜᴇᴄᴋ Lɪɴᴋ Bᴇʟᴏᴡ •",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Support", url=f"t.me/{SUPPORT_CHAT}"
+                            text="• Sᴜᴘᴘᴏʀᴛ •", url=f"t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="Updates", url=f"t.me/{UPDATES_CHANNEL}"
+                            text="• Uᴘᴅᴀᴛᴇs •", url=f"t.me/{UPDATES_CHANNEL}"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Home", callback_data="all_cmds")],
+                    [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="all_cmds")],
                 ]
             ),
         )
@@ -409,7 +409,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "╒═══「☘️ help for *{}* ☘️」═══\n".format(
+                "╒═══「• Hᴇʟᴘ Fᴏʀ *{}* •」═══\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -419,7 +419,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="[• Bᴀᴄᴋ •]", callback_data="help_back")]]
                 ),
             )
 
@@ -470,7 +470,7 @@ def scenario_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="[► Back ◄]", callback_data="scenario_back")
+                    InlineKeyboardButton(text="[• Bᴀᴄᴋ •]", callback_data="scenario_back")
                  ]
                 ]
             ),
@@ -505,7 +505,7 @@ def get_help(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Open In Private Chat",
+                            text="• Oᴘᴇɴ Iɴ Pʀɪᴠᴀᴛᴇ Cʜᴀᴛ •",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
@@ -526,7 +526,7 @@ def get_help(update, context):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[► Back ◄]", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="[• Bᴀᴄᴋ •]", callback_data="help_back")]]
             ),
         )
 
