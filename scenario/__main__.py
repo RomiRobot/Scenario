@@ -139,7 +139,7 @@ buttons = [
                             url="http://t.me/Romi_Robot?startgroup=true")
                     ],
                    [
-                       InlineKeyboardButton(text="• Aʙᴏᴜᴛ •", callback_data="Romi_"),
+                       InlineKeyboardButton(text="• Aʙᴏᴜᴛ •", callback_data="Romi X Robot_"),
                        InlineKeyboardButton(text="• Iɴʟɪɴᴇ •", switch_inline_query_current_chat=""),
                      ],
                     [                  
@@ -685,7 +685,7 @@ def get_settings(update: Update, context: CallbackContext):
             ),
         )
     else:
-        text = "Click here to check your settings."
+        text = "• Cʟɪᴄᴋ Hᴇʀᴇ Tᴏ Cʜᴇᴄᴋ Yᴏᴜʀ Sᴇᴛᴛɪɴɢs •"
 
 
 def donate(update: Update, context: CallbackContext):
