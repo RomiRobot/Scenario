@@ -117,7 +117,7 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
     
 PM_START_TEXT = """
-────「 [Romi](https://telegra.ph/file/f3ab97df5b34519b9b285.jpg) 」────
+────「 [Romi X Robot](https://telegra.ph/file/f3ab97df5b34519b9b285.jpg) 」────
 *• Hᴇʏ! {},*
 *• ɪ Aᴍ {} Aɴɪᴍᴇ Tʜᴇᴍᴇᴅ Aᴅᴠᴀɴᴄᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍɴᴇᴛ Bᴏᴛ Wɪᴛʜ A Lᴏᴛ Oғ Sᴇxʏ Fᴇᴀᴜᴛᴜʀᴇs •*
 ------------------------------------
