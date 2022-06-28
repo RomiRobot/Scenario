@@ -70,10 +70,10 @@ from telethon import Button, events
 @telethn.on(events.NewMessage(pattern="/alive"))
 async def awake(event):
   scenario = event.sender.first_name
-  scenario = "**♡ I,m Romi** \n\n"
+  scenario = "**♡ I,m Romi X Robot** \n\n"
   scenario += "**♡ I'm Working With Awesome Speed**\n\n"
   scenario += "**♡ Scenario: LATEST Version**\n\n"
-  scenario += "**♡ My Creator:** [Romi](t.me/RomiSupport)\n\n"
+  scenario += "**♡ My Creator:** [Romi X Robot](t.me/RomiSupport)\n\n"
   scenario += "**♡ Python-Telegram-Bot: v13.7**\n\n"
   scenario_BUTTON = [
       [
